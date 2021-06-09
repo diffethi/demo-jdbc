@@ -15,9 +15,9 @@ public class TestConfigurationProps {
         String data=config.getString("name");
         System.out.println(data);
 
-        Iterator<String> key = config.getKeys();
-        while (key.hasNext()) {
-            String cle = key.next();
+        Enumeration<String> key = config.getKeys();
+        while (key.hasMoreElements()) {
+            String cle = key.nextElement();
             String value = config.getString(cle);
             System.out.println(cle + ": " + value);
         }
