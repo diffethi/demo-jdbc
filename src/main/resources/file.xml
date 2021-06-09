@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+    <admin>
+        <nom>name</nom>
+        <url>https://docs.google.com/document/d/1kftB5HMl5zJ8GIILc7rap3tUlRxs8sDvsVGS_YxU2j8/edit</url>
+        <user>blablabla</user>
+        <password>whattheheck</password>
+    </admin>
+</configuration>
