@@ -14,7 +14,7 @@ public class TestUpdate {
             connection.close();
         } catch (SQLException throwables) {
             throwables.printStackTrace();
-        } {
-        };
+        }
+        }
     }
-}
+
