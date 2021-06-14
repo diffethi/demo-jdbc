@@ -48,7 +48,7 @@ public class FournisseurDaoJdbc implements FournisseurDao {
     }
 
     @Override
-    public void insert(String fournisseur) {
+    public boolean insert(String fournisseur) {
        // Fournisseur fournisseur=new Fournisseur(5,"tresor publique");
         try {
             DriverManager.registerDriver(new org.mariadb.jdbc.Driver());
@@ -61,6 +61,7 @@ public class FournisseurDaoJdbc implements FournisseurDao {
             throwables.printStackTrace();
         }
 
+        return false;
     }
 
     @Override
