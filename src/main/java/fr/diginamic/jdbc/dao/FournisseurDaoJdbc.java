@@ -48,6 +48,11 @@ public class FournisseurDaoJdbc implements FournisseurDao {
     }
 
     @Override
+    public List<Fournisseur> extraire(Fournisseur fournisseur) {
+        return null;
+    }
+
+    @Override
     public boolean insert(String fournisseur) {
        // Fournisseur fournisseur=new Fournisseur(5,"tresor publique");
         try {
@@ -85,7 +90,7 @@ public class FournisseurDaoJdbc implements FournisseurDao {
             DriverManager.registerDriver(new org.mariadb.jdbc.Driver());
             Connection connection = DriverManager.getConnection("jdbc:mariadb://localhost:3306/compta2", "root", "");
             Statement statement = connection.createStatement();
-            int nb= statement.executeUpdate("DELETE FROM fournisseur WHERE nom='tresor prive'");
+            int nb= statement.executeUpdate("DELETE FROM fournisseur WHERE nom='La Mainson de la Peinture'");
             statement.close();
             connection.close();
         } catch (SQLException throwables) {
